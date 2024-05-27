@@ -1,0 +1,196 @@
+
+/* Custom CSS */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Section */
+header {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #fff;
+    padding: 100px 0;
+}
+
+/* Portfolio Section */
+#portfolio {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+#portfolio .card {
+    border-radius: 5px; /* Optional: Add some rounded corners */
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(42, 42, 43, 0.8); /* Add shadow */
+    transition: transform 0.3s;
+}
+
+#portfolio .card:hover {
+    transform: scale(1.05);
+}
+#portfolio .card-img-top{
+    padding: 10px;
+    
+}
+.carousel {
+    position: relative;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 1; /* Ensure buttons are above images */
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+#tools {
+    position: relative;
+    padding: 80px 0;
+  }
+  
+  #tools::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('web.jfif') no-repeat center center/cover;
+    opacity: 0.8; /* Set the opacity of the background image */
+    z-index: -1; /* Ensure the background image is behind other content */
+  }
+     
+#tools .card {
+    border-radius: 20px; /* Optional: Add some rounded corners */
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(42, 42, 43, 0.8); /* Add shadow */
+    transition: transform 0.3s;
+}
+
+#tools .card:hover {
+    transform: scale(1.05);
+}
+#tools .card-img-top{
+    padding: 5px;
+    height: 190px;
+    
+}
+
+/* Contact Section */
+#contact {
+    padding: 80px 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #fff;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important; /* Black color for links */
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Bootstrap primary color */
+}
+
+
+/* Typing Animation Container */
+.typing-container {
+    position: relative;
+    padding: 20px;
+    max-width: 100%; /* Adjust this value based on your layout */
+    margin-bottom: 20px; /* This creates space at the bottom */
+}
+
+.typing {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    margin-bottom: 40px; /* Increase the space at the bottom */
+}
+
+/* Footer Section */
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-Link {
+    margin-bottom: 10px;
+}
+
+footer .social-Link a {
+    color: blue;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+footer .social-Link a i {
+    background-color: lightblue;
+    height: 30px; /* Set the height */
+    width: 30px; /* Set the width */
+    padding: 5px;
+    border-radius: 5px; /* Optional: Add some rounded corners */
+    box-shadow: 0 2px 5px rgba(42, 42, 43, 0.8); /* Add shadow */
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+
+    .social-links {
+        margin-bottom: 20px;
+    }
+
+    .social-links a {
+        font-size: 24px;
+    }
+
+    .typing-container {
+        max-width: 80%; /* Adjust for smaller screens */
+    }
+
+    .typing {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .typing-container {
+        max-width: 90%; /* Adjust for even smaller screens */
+    }
+
+    .typing {
+        font-size: 18px; /* Further adjust font size for smaller screens */
+    }
+}

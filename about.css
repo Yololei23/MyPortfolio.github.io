@@ -1,0 +1,91 @@
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.section-bg .about{
+    background: linear-gradient(180deg, #f2f6f9 0%, #fff 100%);
+    }
+
+.about .content {
+    padding: 30px 0;
+  }
+  
+  .about .content h3 {
+    font-weight: 500;
+    font-size: 34px;
+    color: #2c4964;
+  }
+  
+  .about .content p {
+    margin-bottom: 0;
+    text-align: justify;
+  }
+  
+  .about .content .count-box {
+    padding: 20px 0;
+    width: 100%;
+  }
+  
+  .about .content .count-box i {
+    display: block;
+    font-size: 36px;
+    color: #eeafca;
+    float: left;
+    line-height: 0;
+  }
+  
+  .about .content .count-box span {
+    font-size: 36px;
+    line-height: 20px;
+    display: block;
+    font-weight: 700;
+    color: #2c4964;
+    margin-left: 50px;
+    font-family: "Playfair Display", serif;
+  }
+  
+  .about .content .count-box p {
+    padding: 15px 0 0 0;
+    margin: 0 0 0 50px;
+    font-family: "Playfair Display", serif;
+    font-size: 14px;
+    color: #437099;
+  }
+  
+  .about .content .count-box a {
+    font-weight: 600;
+    display: block;
+    margin-top: 20px;
+    color: #437099;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .about .content .count-box a:hover {
+    color: #6b96be;
+  }
+  
+  .about .image {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: url("QCU_05821.JPG") center center no-repeat;
+    background-size: cover;
+    min-height: 400px;
+  }
+  
+  @media (max-width: 991px) {
+    .about .image {
+      text-align: center;
+    }
+  
+    .about .image img {
+      max-width: 80%;
+    }
+  }
+  
+  @media (max-width: 667px) {
+    .about .image img {
+      max-width: 100%;
+    }
+  }
+  
