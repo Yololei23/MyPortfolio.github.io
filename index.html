@@ -18,6 +18,15 @@
     <link href="about.css" rel="stylesheet">
     <link href="skills.css" rel="stylesheet">
     <link href="services.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "irgm_e6FUVgRMrQrT",
+            });
+        })();
+    </script>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -52,9 +61,8 @@
         </ul>
       </div>
     </nav>
-
-    <!-- Header Section -->
-    <header id="home" class="bg-primary text-white text-center" style="padding: 100px 0;">
+      <!-- Header Section -->
+      <header id="home" class="bg-primary text-white text-center" style="padding: 100px 0;">
         <div class="container">
           <h1>Hi I'm Mr. Leonard A. Delantar</h1>
           <div class="typing-container">
@@ -67,7 +75,6 @@
           </div>
         </div>
       </header>
-    
       <section id="about" class="about">
         <div class="container">
   
@@ -359,9 +366,9 @@
   
               </div>
             </div>
-  
+           
             <div class="col-lg-5 col-md-8">
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <form  action="" class="php-email-form">
                 <div class="form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
@@ -372,14 +379,14 @@
                   <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
                 </div>
                 <div class="form-group mt-3">
-                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                  <textarea class="form-control" name="message" id ="message" rows="5" placeholder="Message" required></textarea>
                 </div>
                 <div class="my-3">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
                 </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
+                <div class="text-center"><button type="submit" onclick="sendMail()">Send Message</button></div>
               </form>
             </div>
   
@@ -408,7 +415,9 @@
     <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="script.js"></script>
+    <script src="email.js"></script>
     <script src="assets/js/main.js"></script>
+    </script>
     <script>
         // Function to initialize carousels
         function initializeCarousels() {

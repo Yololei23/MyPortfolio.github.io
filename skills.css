@@ -20,7 +20,7 @@
 .ag-courses-item_link {
   display: block;
   padding: 20px 15px;
-  background-color: #121212;
+  background-color: #333333;
   overflow: hidden;
   position: relative;
   transition: color 0.5s ease;
@@ -42,7 +42,7 @@
   overflow: hidden;
   font-weight: bold;
   font-size: 24px;
-  color: #FFF;
+  color: #fff;
   z-index: 2;
   position: relative;
 }
