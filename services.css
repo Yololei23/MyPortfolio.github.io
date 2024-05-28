@@ -3,6 +3,7 @@
 --------------------------------------------------------------*/
 .services container{
   margin-top: 20ppx;
+  padding-bottom: 60px;
 }
 .services .icon-box {
     padding: 20px 15px;
