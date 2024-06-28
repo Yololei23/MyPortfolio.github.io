@@ -29,7 +29,7 @@
   }
   
   .services .icon-box:hover::before {
-    background: #d43076;
+    background: rgb(19, 13, 213);
     height: 100%;
     border-radius: 0px;
   }
@@ -42,7 +42,7 @@
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    background: #d43076;
+    background: rgb(19, 13, 213);;
     transition: all 0.3s ease-in-out;
   }
   
@@ -78,7 +78,7 @@
   }
   
   .services .icon-box:hover .icon i {
-    color: #d43076;
+    color:rgb(19, 13, 213);;
   }
   
   @media (max-width: 768px) {
